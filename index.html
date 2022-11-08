@@ -1,40 +1,95 @@
-<html lang="en" dir="ltr">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | News homepage</title>
+  <script>
+    window.onload=function(){
+      var image = document.querySelector(".image");
+      var w = document.body.clientWidth;
+      if(w<500){
+        image.src = "http://127.0.0.1:5500/assets/images/image-web-3-mobile.jpg";
+      }
+      console.log(image.src);
+    }
+  </script>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Merriweather:ital@1&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <h1>Avril DEMOND</h1>
-  <p><em>EN RECONVERSION</em></p>
-  <p>J'ai exercé le métier d'acheteuse industrielle pendant plusieurs années en Chine.
-    Suite à mon arrivée en France et une pause pour raisons familiales, je souhaite me
-    reconvertir dans le développement d'applications.</p>
-  <hr>
-  <h3>EDUCATION | <em>LICENCE</em></h3>
-  <ul>
-    <p><strong>Université de l'industrie | 2004 – 2007</strong</p> <li>Développement informatique (C++,java,SQL,VBA,configuration réseaux)</li>
-        <li>Multimédia (Html, Photoshop, Flash)</li>
-  </ul>
-  <h3>EXPERIENCE DE TRAVAIL</h3>
-  <ul>
-    <p><strong>Acheteuse industrielle</strong></p>
-    <p><strong>PENTA LASER CUTTING (CHINE, Wuhan) | 2012 – 2015 (3 ans)</strong></p>
-    <li>Achat des pièces de tôlerie pour les machines de découpe laser</li>
-    <li>Moyennes séries et prototypes, CA 1M€/an</li>
-    <li>Consultation, négociation prix et choix des sous-traitants</li>
-    <li>Gestion des non-conformités avec le département qualité</li>
-    <li>Sourcing et développement des fournisseurs</li>
-  </ul>
-  <ul>
-    <p><strong>Assistante département R&D</strong></p>
-    <p><strong>LEROY SOMER - (CHINE, Fuzhou) | 2007 – 2011 (4 ans)</strong></p>
-    <li>Gestion des données techniques et BOM dans l’ERP</li>
-    <li>Mise en place d’une codification unifiée pour centraliser les achats</li>
-  </ul>
-  <h3><a href="contact me.html">contact-me</a></h3>
+  <div class="grid-container">
+    <div class="nav-bar">
+      <h1 class="logo">W.</h1>
+      <ul>
+      <li><a href="javascript:;">Home</a></li>
+      <li><a href="javascript:;">New</a></li>
+      <li><a href="javascript:;">Popular</a></li>
+      <li><a href="javascript:;">Trending</a></li>
+      <li><a href="javascript:;">Categories</a></li>      
+      </ul>
+      <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g></svg>
+    </div>
+ 
+    <!-- <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/></g></svg> -->
+  <div class="main-img">
+      <img class="image" src="/assets/images/image-web-3-desktop.jpg" alt="image-web-3-desktop">
+    </div>
+    <div class="news">
+      <h2>New</h2>
+    <li><a  id="biggersize"  href="javascript:;"> Hydrogen VS Electric Cars </a></li>
+    <li><a href="javascript:;">Will hydrogen-fueled cars ever catch up to EVs?</a></li>
+    <hr>
+    <li><a  id="biggersize"  href="javascript:;">The Downsides of AI Artistry</a></li>
+    <li><a href="javascript:;">What are the possible adverse effects of on-demand AI image generation?</a></li>
+    <hr>
+    <li><a id="biggersize"  href="javascript:;">Is VC Funding Drying Up?</a></li>
+    <li><a href="javascript:;">Private funding by VC firms is down 50% YOY. We take a look at what that means.</a></li>
+    </div>  
+    <div class="leftside">
+      <h2>The Bright Future of Web 3.0?</h2>    
+    </div>
+      <div class="middleside">
+        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the
+          people.
+          But is it really fulfilling its promise?</p>
+          <button> Read more</button>
+        </div>
+    <div class="reviving">
+      <img class="bottomimg" src="/assets/images/image-retro-pcs.jpg" alt="">
+      <div class="article">
+        <h3>01</h3>
+        <a href="javascript:;">Reviving Retro PCs</a>
+        <p>What happens when old PCs are given modern upgrades?</p></div>
+      
+    </div>  
+    <div class="top10">
+      <img class="bottomimg" src="/assets/images/image-top-laptops.jpg" alt="">
+      <div class="article">
+        <h3>02</h3>
+        <a href="javascript:;">Top 10 Laptops of 2022</a>
+        <p>Our best picks for various needs and budgets.</p></div>
+      
+    </div>
+    <div class="growth">
+      <img class="bottomimg" src="/assets/images/image-gaming-growth.jpg" alt="">
+      <div class="article">
+        <h3>03</h3>
+        <a href="javascript:;">The Growth of Gaming</a>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+      
+    </div>
+  </div>  
 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Avril DEMOND</a>.
+  </div>
 </body>
 
 </html>
